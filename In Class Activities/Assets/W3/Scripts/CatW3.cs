@@ -95,9 +95,10 @@ public class CatW3 : MonoBehaviour
             // Below this comment, CALL the method named DecreaseHealth.
             // Notice this method's return type is void- that means we don't
             //      have to store the result anywhere.
-            
+
 
             // STEP 2 ---------------------------------------------------------
+            DecreaseHealth();
 
             // STEP 6 ---------------------------------------------------------
             // Write an IF STATEMENT below that does the following:
@@ -107,9 +108,13 @@ public class CatW3 : MonoBehaviour
             //
             // Try toggling the Destroy Cat When Dead setting on the Inspector,
             //      and see how the cat is removed ONLY when it's checked!
-            
+
 
             // STEP 6 ---------------------------------------------------------
+            if (_health <= 0 && _destroyCatWhenDead)
+            {
+                DestroyCat();
+            }
         }
     }
 
@@ -129,6 +134,9 @@ public class CatW3 : MonoBehaviour
     private void DecreaseHealth()
     {
         // write Step 3 below this comment!
+        _health--;
+        _healthText.text = "health = " + _health;
+
 
 
         // STEP 5 -------------------------------------------------------------
@@ -138,6 +146,7 @@ public class CatW3 : MonoBehaviour
 
 
         // STEP 5 -------------------------------------------------------------
+        _speechText.text = GetHealthSpeechText();
     }
     // STEP 3 -----------------------------------------------------------------
 
@@ -153,11 +162,17 @@ public class CatW3 : MonoBehaviour
     //      return "OH NO!".
     // 2. Otherwise, return "ouch".
 
-    //private ??? GetHealthSpeechText()
-    //{
-        // put the method body here!
-        
-    //}
+    private string GetHealthSpeechText()
+    {
+        if (_health < _maxHealth / 2)
+        {
+            return "OH NO!";
+        }
+        else
+        {
+            return "ouch";
+        }
+    }
     
     // STEP 4 -----------------------------------------------------------------
 
@@ -171,6 +186,7 @@ public class CatW3 : MonoBehaviour
 
 
         // STEP 7 -------------------------------------------------------------
+        _spriteRenderer.color = ball.ballRenderer.color;
     }
     
     // ------------------------------------------------------------------------
