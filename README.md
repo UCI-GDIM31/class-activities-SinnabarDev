@@ -16,10 +16,10 @@ You can't natively add int and float variables in the code without the "f" decla
 Link to W2 Actvity: https://sinnabardev.itch.io/bouncey-ball-cat \
 ### W3
 Table #6
-You’re building a rhythm game, and you’re writing a method named DidPlayerHitBeat that tells you whether or not the player accurately hit a beat based on the time that they pressed a key.
-The input parameters DidPLayerHitBeat would input is the key.input and timeinput. By comparing the input and the time of input with the time of accurate hit is less than margin of error in seconds like 1 second.  We can return a boolean of true or false.\n
-Classes are like rectangle while components are squares. Component and Classes are similar as they both contains methods and varible to create functions. Classes are like blueprints able to be edited and developed for certain unique functions. Components are reusable classes which functions that can be spread and use for common use.\n
-The balls in the scene become extremely bright because the getcolormultipler is being called as the speedthreshold is being reached over surpassed.\n
+You’re building a rhythm game, and you’re writing a method named DidPlayerHitBeat that tells you whether or not the player accurately hit a beat based on the time that they pressed a key.\
+The input parameters DidPLayerHitBeat would input is the key.input and timeinput. By comparing the input and the time of input with the time of accurate hit is less than margin of error in seconds like 1 second.  We can return a boolean of true or false.\
+Classes are like rectangle while components are squares. Component and Classes are similar as they both contains methods and varible to create functions. Classes are like blueprints able to be edited and developed for certain unique functions. Components are reusable classes which functions that can be spread and use for common use.\
+The balls in the scene become extremely bright because the getcolormultipler is being called as the speedthreshold is being reached over surpassed.\
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
