@@ -21,6 +21,7 @@ The input parameters DidPLayerHitBeat would input is the key.input and timeinput
 Classes are like rectangle while components are squares. Component and Classes are similar as they both contains methods and varible to create functions. Classes are like blueprints able to be edited and developed for certain unique functions. Components are reusable classes which functions that can be spread and use for common use.\
 The balls in the scene become extremely bright because the getcolormultipler is being called as the speedthreshold is being reached over surpassed.\
 ### W4
+Table #6
 Tables 1-10: lines 5, 22, and 25\
 Line 5 is delacring a float variable called movespeed with is serialize to edit in inspect, this is a foward movement based on time delta.\
 Line 22 is a line of code that get input verticle native to unity c# and multiples the movespeed to get a float of the translation placement away from the origin.\
