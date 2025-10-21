@@ -26,6 +26,10 @@ Tables 1-10: lines 5, 22, and 25\
 Line 5 is delacring a float variable called movespeed with is serialize to edit in inspect, this is a foward movement based on time delta.\
 Line 22 is a line of code that get input verticle native to unity c# and multiples the movespeed to get a float of the translation placement away from the origin.\
 Line 25 transform is tracking the xyz data and translating the data to create a function for the new input data to 0,0, translation. translation in the z of foward axis.\
+Rigid Body = Cat, Soccerball\
+All need colliders\
+but, Collider isTrigger = Goal\
+
 =======
 ## Open-Source Assets
 ### W1
