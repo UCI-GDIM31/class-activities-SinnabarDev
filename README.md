@@ -19,12 +19,16 @@ Table #6
 You’re building a rhythm game, and you’re writing a method named DidPlayerHitBeat that tells you whether or not the player accurately hit a beat based on the time that they pressed a key.\
 The input parameters DidPLayerHitBeat would input is the key.input and timeinput. By comparing the input and the time of input with the time of accurate hit is less than margin of error in seconds like 1 second.  We can return a boolean of true or false.\
 Classes are like rectangle while components are squares. Component and Classes are similar as they both contains methods and varible to create functions. Classes are like blueprints able to be edited and developed for certain unique functions. Components are reusable classes which functions that can be spread and use for common use.\
+<<<<<<< HEAD
 The balls in the scene become extremely bright because the getcolormultipler is being called as the speedthreshold is being reached over surpassed.\
 ### W4
 Tables 1-10: lines 5, 22, and 25\
 Line 5 is delacring a float variable called movespeed with is serialize to edit in inspect, this is a foward movement based on time delta.\
 Line 22 is a line of code that get input verticle native to unity c# and multiples the movespeed to get a float of the translation placement away from the origin.\
 Line 25 transform is tracking the xyz data and translating the data to create a function for the new input data to 0,0, translation. translation in the z of foward axis.\
+=======
+The balls in the scene become extremely bright because the getcolormultipler is being called as the speedthreshold is being reached or even surpassed.
+>>>>>>> c1d4d5118de18f0147e50f2fc957dec6f0871b2f
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
