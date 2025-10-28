@@ -29,7 +29,17 @@ Line 25 transform is tracking the xyz data and translating the data to create a 
 Rigid Body = Cat, Soccerball\
 All need colliders\
 but, Collider isTrigger = Goal\
-
+### W5
+Step 1 (2 min): Write down a question you have about vectors, the Transform Component, gameObject, or GetComponent().
+Is there a way for the GetComponent gameObject Childern that are also GameObjects?
+Yes, GetComponent can call transfrom or we can attach a unique component like GetComponentInChild.
+What member variable(s) does this class need?
+We need a GameObject variable to declare as a target with a serializedfield
+We also need to declare a NavMeshAgent
+What method(s) does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write?
+The method we need is Start() unless the deer is following a moving object then we can use Update()
+What should the method(s) do?
+The method should transform and get the postion of the get component target. Then the Navmesh should set postion to the target gameobject transform postion.
 =======
 ## Open-Source Assets
 ### W1
