@@ -40,6 +40,13 @@ What method(s) does this class need? Should it be something that Unity provides 
 The method we need is Start() unless the deer is following a moving object then we can use Update()
 What should the method(s) do?
 The method should transform and get the postion of the get component target. Then the Navmesh should set postion to the target gameobject transform postion.
+### W6
+Unity coding\
+[GDIM31 Class Resource](https://docs.google.com/document/d/1IZFJUcFgjnf2ph_xvqjTaqAltUuFe4KMaDIYs-4cPV8/edit?usp=sharing)\
+
+What member variables does this class need?\
+What methods does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write?\
+What should the method(s) do?\
 =======
 ## Open-Source Assets
 ### W1
