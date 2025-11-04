@@ -4,14 +4,14 @@ using UnityEngine;
 public class BatW6 : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    private Transform _player;
+    [SerializeField] private Transform _playerTransform;
 
-    public void EnableChase()
+    public void StartChasing()
     {
         enabled = true;
     }
 
-    public void DisableChase()
+    public void StopChasing()
     {
         enabled = false;
     }

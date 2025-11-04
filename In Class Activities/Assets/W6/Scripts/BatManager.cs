@@ -12,7 +12,7 @@ public class BatManager : MonoBehaviour
     // STEP 1 -----------------------------------------------------------------
     // Add a member variable named "_bats" that's an array of BatW6 Components.
     // In the Inspector, add ALL of the bats in the Scene.
-    [SerializeField] public GameObject[] _bats;
+    [SerializeField] public BatW6[] _bats;
     
     // STEP 1 -----------------------------------------------------------------
 
@@ -21,7 +21,7 @@ public class BatManager : MonoBehaviour
     // In the Inspector, add at least a few different messages for the bats to
     //      say when they reach the player.
 
-    [SerializeField] string[] _messages;
+    [SerializeField] private string[] _messages;
     
     // STEP 3 -----------------------------------------------------------------
 
@@ -41,7 +41,7 @@ public class BatManager : MonoBehaviour
         // That means the bat at _bats[0] has a timer at _newTextTimers[0],
         //      the bat at _bats[1] has a timer at _newTextTimers[1],
         //      and so on.
-        // _newTextTimers = new [_bats.Length];
+         _newTextTimers = new float [_bats.Length];
         // STEP 6 -------------------------------------------------------------
     }
 
@@ -54,6 +54,10 @@ public class BatManager : MonoBehaviour
         
 
         // STEP 7 -------------------------------------------------------------
+        for (int i = 0; i < _newTextTimers.Length; i++)
+        {
+            _newTextTimers[i] += Time.deltaTime;
+        }
 
         // STEP 2 -------------------------------------------------------------
         // Write a for loop that visits all of the entires in the _bats array,
@@ -75,18 +79,24 @@ public class BatManager : MonoBehaviour
 
 
         // STEP 2 -------------------------------------------------------------
-        for (int i = 0, i < _bat.Length, i++)
+        for (int i = 0; i < _bats.Length; i++)
         {
-            foat distance = ;
+            float distance = Vector3.Distance(_playerTransform.position, _bats[i].transform.position);
             if (distance < _interactDistance)
             {
-                _bats[i].GetComponent<BatW6>().StartChasing();
+                _bats[i].StartChasing();
             }
             else
             {
-                _bats[i].GetComponent<BatW6>().StopChasing();
+                _bats[i].StopChasing();
+            }
+
+            if (distance < _overlapDistance)
+            {
+                CreateReactions(_bats[i]);
             }
         }
+
 
     }
 
@@ -109,6 +119,9 @@ public class BatManager : MonoBehaviour
         //      of CreateReactions.
         
         // STEP 5 -------------------------------------------------------------
+        int randindex = Random.Range(0,_messages.Length-1);
+        SpawnReactionUI (bat, _messages[randindex]);
+
     }
 
     // ------------------------------------------------------------------------
@@ -122,7 +135,7 @@ public class BatManager : MonoBehaviour
         // /* starts the comments, and */ ends it.
         // Simply uncomment the below lines by removing the /* and */ to finish.
 
-        /*
+        
         int index = System.Array.IndexOf(_bats, bat);
         
         GridLayoutGroup layout = bat.GetComponentInChildren<GridLayoutGroup>();
@@ -132,7 +145,7 @@ public class BatManager : MonoBehaviour
             TMP_Text textObj = Instantiate(_reactionUiPrefab, layout.transform);
             textObj.text = message;
         }
-        */
+        
 
         // STEP 8 -------------------------------------------------------------
     }
