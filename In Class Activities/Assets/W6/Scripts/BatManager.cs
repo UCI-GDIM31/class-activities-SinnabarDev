@@ -12,6 +12,7 @@ public class BatManager : MonoBehaviour
     // STEP 1 -----------------------------------------------------------------
     // Add a member variable named "_bats" that's an array of BatW6 Components.
     // In the Inspector, add ALL of the bats in the Scene.
+    [SerializeField] public GameObject[] _bats;
     
     // STEP 1 -----------------------------------------------------------------
 
@@ -19,6 +20,8 @@ public class BatManager : MonoBehaviour
     // Add a member variable named "_messages" that's an array of strings.
     // In the Inspector, add at least a few different messages for the bats to
     //      say when they reach the player.
+
+    [SerializeField] string[] _messages;
     
     // STEP 3 -----------------------------------------------------------------
 
@@ -72,6 +75,18 @@ public class BatManager : MonoBehaviour
 
 
         // STEP 2 -------------------------------------------------------------
+        for (int i = 0, i < _bat.Length, i++)
+        {
+            foat distance = ;
+            if (distance < _interactDistance)
+            {
+                _bats[i].GetComponent<BatW6>().StartChasing();
+            }
+            else
+            {
+                _bats[i].GetComponent<BatW6>().StopChasing();
+            }
+        }
 
     }
 

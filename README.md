@@ -43,10 +43,13 @@ The method should transform and get the postion of the get component target. The
 ### W6
 Unity coding\
 [GDIM31 Class Resource](https://docs.google.com/document/d/1IZFJUcFgjnf2ph_xvqjTaqAltUuFe4KMaDIYs-4cPV8/edit?usp=sharing)\
-
+BatW6\
 What member variables does this class need?\
+The member variable we need is Speed and player transform.\
 What methods does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write?\
+Needs update(), Collison(), startchase(), and stopchase()\
 What should the method(s) do?\
+methods should update every frame, start the movement and stop movement, and detect collision trigger.
 =======
 ## Open-Source Assets
 ### W1
