@@ -50,6 +50,10 @@ What methods does this class need? Should it be something that Unity provides (l
 Needs update(), Collison(), startchase(), and stopchase()\
 What should the method(s) do?\
 methods should update every frame, start the movement and stop movement, and detect collision trigger.
+### W6
+[GDIM Enigeering Doc](https://docs.google.com/document/d/1ACCBYMqYrHTf6bSU9TNPsHK5OQnuA3CH1FFEp9_a9kQ/edit?usp=sharing)\
+helped with game idea and environment.\
+
 =======
 ## Open-Source Assets
 ### W1
