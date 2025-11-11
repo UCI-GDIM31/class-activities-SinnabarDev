@@ -53,7 +53,8 @@ methods should update every frame, start the movement and stop movement, and det
 ### W6
 [GDIM Enigeering Doc](https://docs.google.com/document/d/1ACCBYMqYrHTf6bSU9TNPsHK5OQnuA3CH1FFEp9_a9kQ/edit?usp=sharing)\
 helped with game idea and environment.\
-What was wrong with the code in Step 2?
+What was wrong with the code in Step 2?\
+The vector3.forword will move the muskrat in the z direction which if the orientation of the muskrat is different will not necessirily move it forward and backward.
 
 =======
 ## Open-Source Assets
